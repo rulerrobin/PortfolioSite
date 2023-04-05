@@ -1,0 +1,103 @@
+/* main themes */
+* {
+    background-color: #23263A;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+
+img {
+    max-width: .5rem;
+    height: auto;
+}
+
+/* large red bar spacer */
+.spacer_1{
+    width: 10rem;
+    height: 3px;
+    background-color: #EE4956;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* medium red bar spacer */
+.spacer_2{
+    width: 75px;
+    height: 3px;
+    background-color: #EE4956;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #FF4A57;
+    display: flex;
+    border: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 3px;
+}
+
+/* settings for header and navbar */
+.topnav a {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px){
+    .name {
+        font-size: 0.7rem;
+    }
+
+    .topnav a {
+        font-size: 0.7rem;
+        margin-right: 5px;
+    }
+}
+
+/* any links used not to have any changes to decorations */
+
+
+.headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+h1 { 
+    /* settings for h1 on each page */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+#principal {
+    color: #808080;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.personal_links {
+    text-align: center;
+}
