@@ -48,7 +48,7 @@ button {
 
 /* settings for header and navbar */
 .topnav a {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
     margin-right: 20px;
 }
@@ -58,14 +58,21 @@ a:visited {
 }
 
 @media screen and (max-width: 480px){
+    
+    .hello {
+    font-size: 1.5rem;
+    text-align: center; 
+    }
+
     .name {
-        font-size: 0.7rem;
+        font-size: 20px;
     }
 
     .topnav a {
-        font-size: 0.7rem;
+        font-size: 15px;
         margin-right: 5px;
     }
+
 }
 
 /* any links used not to have any changes to decorations */
@@ -75,20 +82,14 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem;
+    margin: 2rem;
     margin-top: 2rem;
-    font-size: 1rem;
+    font-size: 2em;
 }
 
-h1 { 
-    /* settings for h1 on each page */
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    
+.hello {
+    font-size: 1.5rem;
+    text-align: center; 
 }
 
 #principal {
