@@ -3,6 +3,17 @@
     background-color: #23263A;
     font-family: "Roboto", sans-serif;
     color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 body {
@@ -12,42 +23,58 @@ body {
 
 .tech {
     max-width: 32px;
-    margin: 10px;
+    max-height: 32px;
+    margin: 30px;
+    /* height: 2rem;
+    width: 2rem; */
+    padding: 1px;
 }
 
+header {
+    border-bottom: solid black 1px;
+}
+
+/* 
 .tech_layout {
     text-align: center;
-    /* aligns text to middle of image */
+} */
+
+.tech_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .technologies {
     text-align: center;
 }
 
-
-
-
-
 /* large red bar spacer */
-.spacer_1{
-    width: 50vw;
+#spacer_1{
+    width: 12rem;
     height: 5px;
     background-color: #EE4956;
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 /* medium red bar spacer */
 .spacer_2{
-    width: 75px;
-    height: 3px;
+    width: 10rem;
+    height: 5px;
     background-color: #EE4956;
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -60,7 +87,12 @@ button {
     margin-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding: .5rem;
     border-radius: 3px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /* settings for and navbar */
@@ -70,17 +102,30 @@ nav {
     font-weight: bold;
     justify-content: space-around;
     width: 100%;
-    margin-top: 1rem
+    margin-top: 20px;
+    margin-bottom: 20px
+
 }
 
 .name {
     display: none;
 }
 
-.hello {
+main h1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#intro {
     display: flex;
     font-size: 35px;
     text-align: center; 
+    justify-content: center;
+    /* background-color: #3b406088; */
+    padding: 20px 10px;
 }
 
 #principal {
@@ -88,18 +133,32 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .personal_links {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#end {
+    border-top: black solid 1px;
+    padding: 10px;
+    font-size: 10px;
 }
 
 
 /* media queries have to go after base css styles */
 /* phone media query */
-@media screen and (min-width: 600px){    
-    .hello {
-        font-size: 7rem;
+@media screen and (min-width: 600px){   
+
+    
+    #intro {
+        font-size: 5rem;
+        text-align: center;
     }
 
     .topnav a {
@@ -107,11 +166,43 @@ nav {
         margin: 30px;
     }
 
+    .personal_links {
+        font-size: 2em;
+    }
+
     #principal {
         font-size: 2em;
         margin: 70px;
     }
 
-    
+    .tech {
+        max-width: 6rem;
+        max-height: 6rem;
+        margin: 10px;
+    }
 
+    .technologies {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    button {
+        margin-bottom: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 1.5rem;
+    }
+
+    #spacer_1 {
+        width: 40rem;
+        margin: 5rem;
+    }
+
+    .spacer_2 {
+        width: 20rem;
+    }
+
+    footer {
+        font-size: 10px;
+    }
 }
