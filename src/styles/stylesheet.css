@@ -159,6 +159,7 @@ main h1 {
     #intro {
         font-size: 5rem;
         text-align: center;
+        margin-top: 5rem;
     }
 
     .topnav a {
@@ -168,6 +169,8 @@ main h1 {
 
     .personal_links {
         font-size: 2em;
+        margin-top: 10px;
+        margin-bottom: 2rem;
     }
 
     #principal {
@@ -186,6 +189,12 @@ main h1 {
         font-size: 4rem;
     }
 
+    .tech_container {
+        justify-content: space-evenly;
+        margin: 40px;
+        padding: 0;
+    }
+
     button {
         margin-bottom: 2rem;
         padding-left: 3rem;
@@ -193,13 +202,20 @@ main h1 {
         font-size: 1.5rem;
     }
 
+    .more_tech {
+        margin:5rem;
+    }
+
     #spacer_1 {
         width: 40rem;
         margin: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
     }
 
     .spacer_2 {
-        width: 20rem;
+        width: 12rem;
     }
 
     footer {
