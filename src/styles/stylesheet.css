@@ -1,12 +1,13 @@
 /* overall themes */
 * {
-    background-color: #23263A;
     font-family: "Roboto", sans-serif;
     color: white;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
 
 a {
     text-decoration: none;
@@ -19,6 +20,7 @@ a:hover {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #23263A;
 }
 
 .tech {
@@ -31,13 +33,13 @@ body {
 }
 
 header {
-    border-bottom: solid black 1px;
+    background-color: #2B2D41;
 }
 
-/* 
-.tech_layout {
-    text-align: center;
-} */
+h2 {
+    color: white;
+    margin: 1rem;
+}
 
 .tech_container {
     display: flex;
@@ -77,11 +79,27 @@ header {
     margin-bottom: 20px;
 }
 
+/* medium red bar spacer */
+.spacer_3{
+    width: 5rem;
+    height: 5px;
+    background-color: #EE4956;
+    display: flex;
+    justify-content: left;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.about_desc {
+    text-align: center;
+    margin: 3rem;
+    font-size: 2rem;
+}
+
 button {
     background-color: #FF4A57;
     display: flex;
     border: none;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
@@ -145,14 +163,69 @@ main h1 {
 }
 
 #end {
-    border-top: black solid 1px;
     padding: 10px;
     font-size: 10px;
 }
 
+.container {
+    position: relative;
+    /* width: 1200px;
+    height: 300px; */
+    margin: 1rem; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 9rem;
+    height: 9rem;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+    background-color: #2B2D41;
+    padding: 0.1rem;
+}
+
+.box p {
+    display:none;
+}
+
+.content:hover p{
+    display: contents;
+    font-size: 1rem;
+}
+
+.content:hover figcaption, .content:hover img {
+    display:none;
+}
+
+footer {
+    background-color: #2B2D41;
+}
+
+.page_topper {
+   margin-top: 2rem;
+}
+
+.other_skills {
+    height: auto;
+    width: auto;
+}
+
+.other_skills {
+    height: 3rem;
+    margin: 1rem;
+}
+
 
 /* media queries have to go after base css styles */
-/* phone media query */
+/* desktop styles */
 @media screen and (min-width: 600px){   
 
     
@@ -165,6 +238,7 @@ main h1 {
     .topnav a {
         font-size: 2rem;
         margin: 30px;
+        width: auto;;
     }
 
     .personal_links {
@@ -220,5 +294,24 @@ main h1 {
 
     footer {
         font-size: 10px;
+    }
+    
+    .box {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .container {
+        justify-content: space-evenly;
+    }
+
+    .other_skills {
+        height: auto;
+        width: auto;
+    }
+    
+    .other_skills {
+        height: 7rem;
+        margin: 1rem;
     }
 }
