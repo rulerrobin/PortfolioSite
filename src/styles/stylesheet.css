@@ -179,13 +179,6 @@ main h1 {
     transition: 0.3s;
 }
 
-#end {
-    padding: 10px;
-    font-size: 10px;
-    background-color: #2B2D41;
-    width: 100%;
-    position: bottom;
-}
 
 .container {
     position: relative;
@@ -332,6 +325,10 @@ form #fname, form #message, form #consub{
     height: 2rem;
 }
 
+.info_column img {
+    margin-left: 1rem;
+    width: 1.5rem;
+}
 
 /* media queries have to go after base css styles */
 
@@ -418,7 +415,22 @@ form #fname, form #message, form #consub{
     }
 
     footer {
-        font-size: 10px;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#2B2D41;
+        height: 3rem;
+    }
+
+    footer p {
+        margin-left: 1rem;
+
+    }
+
+    .mail {
+        width: 2rem;
+        margin: 0;
     }
     
     .box {
