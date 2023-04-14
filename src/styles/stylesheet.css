@@ -330,6 +330,25 @@ form #fname, form #message, form #consub{
     width: 1.5rem;
 }
 
+footer {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#2B2D41;
+    height: 3rem;
+}
+
+footer p {
+    margin-left: 1rem;
+
+}
+
+.mail {
+    width: 2rem;
+    margin: 0;
+}
+
 /* media queries have to go after base css styles */
 
 @media screen and (min-width: 1000px){   
